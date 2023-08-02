@@ -14,7 +14,6 @@ const rl = readline.createInterface({
 const specializations = {
     frontend: ['HTML', 'CSS', 'JavaScript', 'React'],
     backend: ['Node.js', 'Express.js', 'SQL'],
-    devops: ['Docker', 'Kubernetes', 'CI/CD'],
 };
 
 // Définir les niveaux, l'XP nécessaire pour passer au niveau suivant et les compétences débloquées à chaque niveau ↓
