@@ -9,6 +9,7 @@ router.get("/", async (req, res) => {
     res.json(characters);
   } catch (err) {
     console.error(err)
+    res.status(500).json({ message: err.message });
   }
 });
 
@@ -19,7 +20,7 @@ router.post("/", async (req, res) => {
     res.json(newCharacter);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "An error occurred while creating the character." });
+    res.status(500).json({ message: err.message });
   }
 });
 //Ma partie de là

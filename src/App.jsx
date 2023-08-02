@@ -2,12 +2,18 @@ import { Routes, Route } from 'react-router-dom'
 import SelectCharacter from "./pages/SelectCharacter"
 import CreateCharacter from './pages/CreateCharacter'
 import GameBoard from './pages/GameBoard'
+import { useNavigate } from 'react-router';
 import "./app.css"
 
 function App() {
+  const navigate = useNavigate();
   return (
     <>
-      <div className="jumbotron jumbotron-fluid" style={{ padding: "1rem 1rem" }}>
+      <div
+        className="jumbotron jumbotron-fluid cursor-pointer"
+        style={{ padding: "1rem 1rem" }}
+        onClick={() => navigate('/')}
+      >
         <div className="container">
           <div className="row">
             <div className="col">
