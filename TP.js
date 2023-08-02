@@ -15,7 +15,6 @@ const specializations = {
     frontend: ['HTML', 'CSS', 'JavaScript', 'React'],
     backend: ['Node.js', 'Express.js', 'SQL'],
     devops: ['Docker', 'Kubernetes', 'CI/CD'],
-    datascience: ['Python', 'Machine Learning', 'Data Analysis']
 };
 
 // Définir les niveaux, l'XP nécessaire pour passer au niveau suivant et les compétences débloquées à chaque niveau ↓
@@ -24,8 +23,25 @@ const levels = [
     { level: 1, xpRequired: 100, unlockedSkills: 1 },
     { level: 2, xpRequired: 200, unlockedSkills: 1 },
     { level: 3, xpRequired: 300, unlockedSkills: 1 },
+    { level: 4, xpRequired: 400, unlockedSkills: 1 },
+    { level: 5, xpRequired: 500, unlockedSkills: 1 },
+    { level: 6, xpRequired: 600, unlockedSkills: 1 },
+    { level: 7, xpRequired: 700, unlockedSkills: 1 },
+    { level: 8, xpRequired: 800, unlockedSkills: 1 },
+    { level: 9, xpRequired: 900, unlockedSkills: 1 },
+    { level: 10, xpRequired: 1000, unlockedSkills: 1 },
+    { level: 11, xpRequired: 1100, unlockedSkills: 1 },
+    { level: 12, xpRequired: 1200, unlockedSkills: 1 },
+    { level: 13, xpRequired: 1300, unlockedSkills: 1 },
+    { level: 14, xpRequired: 1400, unlockedSkills: 1 },
+    { level: 15, xpRequired: 1500, unlockedSkills: 1 },
+    { level: 16, xpRequired: 1600, unlockedSkills: 1 },
+    { level: 17, xpRequired: 1700, unlockedSkills: 1 },
+    { level: 18, xpRequired: 1800, unlockedSkills: 1 },
+    { level: 19, xpRequired: 1900, unlockedSkills: 1 },
+    { level: 20, xpRequired: 2000, unlockedSkills: 1 },
 
-    // Ajoutez d'autres niveaux ici avec leurs valeurs d'XP et de compétences débloquées ↑
+    // ↑ Ajoutez d'autres niveaux ici avec leurs valeurs d'XP et de compétences débloquées ↑
 ];
 
 // Définir les quêtes et leurs récompenses (XP et argent) ↓
@@ -92,7 +108,7 @@ function displayPlayerInfo() {
 
 // Fonction pour gérer les tâches ↓
 
-function handleTasks() { 
+function handleTasks() {
 
     // Logique pour afficher les tâches et gagner de l'XP ↓
 
