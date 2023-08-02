@@ -41,10 +41,10 @@ const levels = [
     { level: 19, xpRequired: 1900, unlockedSkills: 1 },
     { level: 20, xpRequired: 2000, unlockedSkills: 1 },
 
-    // ↑ Ajoutez d'autres niveaux ici avec leurs valeurs d'XP et de compétences débloquées ↑
+    // ↑ Ajoute d'autres niveaux ici avec leurs valeurs d'XP et de compétences débloquées ↑
 ];
 
-// Définir les quêtes et leurs récompenses (XP et argent) ↓
+// Définir les quêtes et leurs récompenses (XP et fric) ↓
 
 const quests = [
     { name: 'Mission de 3 jours en développement Frontend', xpReward: 500, moneyReward: 1000 },
