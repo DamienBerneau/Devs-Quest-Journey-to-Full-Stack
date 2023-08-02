@@ -66,9 +66,11 @@ const items = [
     { name: 'Coussins ergonomiques', effect: 'augmenterEndurance' },
     { name: 'Webcam', effect: 'augmenterMultitâche' },
     { name: 'Support de moniteur', effect: 'augmenterPrecision' },
+    { name: 'Purificateur d/air de bureau', effect: 'augmenterMultitâche' },
+    { name: 'Support casque audio', effect: 'augmenterEndurance' },
 ];
 
-// Créer un objet pour stocker tes données ↓
+// Créer un objet pour stocker tes données ↑
 
 const player = {
     name: '',
