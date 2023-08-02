@@ -1,5 +1,5 @@
-import { DataTypes, DataTypes } from "sequelize";
-import database from '../database,js';
+import { DataTypes } from "sequelize";
+import database from '../database.js';
 
 const Competence = database.define('Competence', {
     id: {
