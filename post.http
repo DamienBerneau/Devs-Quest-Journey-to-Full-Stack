@@ -10,13 +10,13 @@ Content-Type: application/json
 
 
 {
-    "name": "nodeJs"
+    "name": "PHP"
 }
 ###
 POST http://localhost:3000/api/items
 Content-Type: application/json
 
-{ "name": "Clavier Gaming", "effect": "augmenterVitesseDeCodage" }
+{ "name": "Support de moniteur", "effect": "augmenterPrecision" }
 
 ###
 GET http://localhost:3000/api/items
@@ -26,9 +26,9 @@ POST http://localhost:3000/api/quests
 Content-Type: application/json
 
 {
-  "name": "Mission de 3 jours en développement Frontend",
-  "xpReward": 500,
-  "moneyReward": 1000
+  "name": "Le Voile des Étoiles Éteintes",
+  "xpReward": 5000,
+  "moneyReward": 5500
 }
 
 ###
