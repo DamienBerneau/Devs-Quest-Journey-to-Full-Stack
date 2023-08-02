@@ -9,8 +9,14 @@ POST http://localhost:3000/api/competences/
 Content-Type: application/json
 
 {
-    "name": "JavaScript"
+    "name": "php"
 }
+
+###
+POST http://localhost:3000/api/items
+Content-Type: application/json
+
+{ "name": "Clavier Gaming", "effect": "augmenterVitesseDeCodage" }
 
 ###
 GET http://localhost:3000/items
