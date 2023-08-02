@@ -15,7 +15,6 @@ const specializations = {
     frontend: ['HTML', 'CSS', 'JavaScript', 'React'],
     backend: ['Node.js', 'Express.js', 'SQL'],
     devops: ['Docker', 'Kubernetes', 'CI/CD'],
-    datascience: ['Python', 'Machine Learning', 'Data Analysis']
 };
 
 // Définir les niveaux, l'XP nécessaire pour passer au niveau suivant et les compétences débloquées à chaque niveau ↓
@@ -24,19 +23,36 @@ const levels = [
     { level: 1, xpRequired: 100, unlockedSkills: 1 },
     { level: 2, xpRequired: 200, unlockedSkills: 1 },
     { level: 3, xpRequired: 300, unlockedSkills: 1 },
+    { level: 4, xpRequired: 400, unlockedSkills: 1 },
+    { level: 5, xpRequired: 500, unlockedSkills: 1 },
+    { level: 6, xpRequired: 600, unlockedSkills: 1 },
+    { level: 7, xpRequired: 700, unlockedSkills: 1 },
+    { level: 8, xpRequired: 800, unlockedSkills: 1 },
+    { level: 9, xpRequired: 900, unlockedSkills: 1 },
+    { level: 10, xpRequired: 1000, unlockedSkills: 1 },
+    { level: 11, xpRequired: 1100, unlockedSkills: 1 },
+    { level: 12, xpRequired: 1200, unlockedSkills: 1 },
+    { level: 13, xpRequired: 1300, unlockedSkills: 1 },
+    { level: 14, xpRequired: 1400, unlockedSkills: 1 },
+    { level: 15, xpRequired: 1500, unlockedSkills: 1 },
+    { level: 16, xpRequired: 1600, unlockedSkills: 1 },
+    { level: 17, xpRequired: 1700, unlockedSkills: 1 },
+    { level: 18, xpRequired: 1800, unlockedSkills: 1 },
+    { level: 19, xpRequired: 1900, unlockedSkills: 1 },
+    { level: 20, xpRequired: 2000, unlockedSkills: 1 },
 
-    // Ajoutez d'autres niveaux ici avec leurs valeurs d'XP et de compétences débloquées ↑
+    // ↑ Ajoute d'autres niveaux ici avec leurs valeurs d'XP et de compétences débloquées ↑
 ];
 
-// Définir les quêtes et leurs récompenses (XP et argent) ↓
+// Définir les quêtes et leurs récompenses (XP et fric) ↓
 
 const quests = [
     { name: 'Mission de 3 jours en développement Frontend', xpReward: 500, moneyReward: 1000 },
 
-    // Ajoutez d'autres quêtes ici avec leurs récompenses ↑
+    // Ajoute d'autres quêtes ici avec leurs récompenses ↑
 ];
 
-// Définir les objets et leurs effets ↓
+// Objets et leurs effets ↓
 
 const items = [
     { name: 'Clavier mécanique', effect: 'increaseCodingSpeed' },
@@ -45,7 +61,7 @@ const items = [
     { name: 'Écrans multiples', effect: 'increaseMultitasking' }
 ];
 
-// Créer un objet pour stocker les données du joueur ↓
+// Créer un objet pour stocker tes données ↓
 
 const player = {
     name: '',
@@ -77,7 +93,7 @@ function chooseSpecialization() {
     );
 }
 
-// Fonction pour afficher les informations du joueur ↓
+// Fonction pour afficher les infos du joueur ↓
 
 function displayPlayerInfo() {
     console.log(`\n----- Informations du joueur -----`);
@@ -90,32 +106,33 @@ function displayPlayerInfo() {
     console.log(`-----\n`);
 }
 
-// Fonction pour gérer les tâches ↓
+// Pour gérer les tâches ↓
 
-function handleTasks() { 
+function handleTasks() {
 
-    // Logique pour afficher les tâches et gagner de l'XP ↓
+    // Pour afficher les tâches et gagner de l'XP ↓
 
     console.log(`Gérer les tâches`);
 }
 
-// Fonction pour gérer les quêtes ↓
+// Pour gérer les quêtes ↓
 
 function handleQuests() {
 
-    // ↑ Logique pour afficher les quêtes et récompenses 
+    // ↑ Pour afficher les quêtes et récompenses 
 
     console.log(`Gérer les quêtes`);
 }
 
-// Fonction pour acheter des objets ↓
+// Pour acheter des objets ↓
 
 function buyItem(itemName) {
     const item = items.find((item) => item.name.toLowerCase() === itemName.toLowerCase());
     if (item) {
         player.items.push(item);
 
-        // ↑ Définir les effets des objets ici (augmenter vitesse, XP, etc.)
+        // ↑ Définir les effets des objets ici 
+        // (augmenter vitesse, XP, etc.)
 
         console.log(`Vous avez acheté : ${item.name}`);
     } else {
@@ -123,21 +140,21 @@ function buyItem(itemName) {
     }
 }
 
-// Fonction pour initialiser le jeu et saisir le nom du joueur ↓
+// Pour initialiser le jeu et saisir le nom ↓
 
 function initGame() {
-    rl.question(`Quel est votre nom?\n`, (name) => {
+    rl.question(`C'est quoi ton nom?\n`, (name) => {
         player.name = name;
-        console.log(`Bonjour, ${player.name}!`);
+        console.log(`Hey ! Salut, ${player.name}!`);
         chooseSpecialization();
     });
 }
 
-// Fonction pour augmenter l'XP du joueur ↓
+// Pour augmenter l'XP ↓
 
 function increaseXP(amount) {
     player.xp += amount;
-    console.log(`Vous avez gagné ${amount} points d'XP!`);
+    console.log(`Ta gagné ${amount} points d'XP!`);
 
     // Vérifier si le joueur a atteint un nouveau niveau ↓
 
@@ -149,6 +166,6 @@ function increaseXP(amount) {
     }
 }
 
-// Lancer le jeu ↓ 
+// Lance le jeu !! ↓ 
 
 initGame();
