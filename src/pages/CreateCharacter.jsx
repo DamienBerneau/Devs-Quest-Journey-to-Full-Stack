@@ -10,11 +10,12 @@ function CreateCharacter() {
     e.preventDefault();
     if (name && specialization) {
       const character = { name, specialization };
-      fetch('/api/character', {
+      fetch('/api/characters', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(character),
       })
+        .then(res => res.json())
         .then(() => navigate('/'))
         .catch((error) => console.error(error));
     }
