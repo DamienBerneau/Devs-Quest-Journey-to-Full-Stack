@@ -1,5 +1,5 @@
 import express from 'express';
-import Inventory from '../models/Inventory.model.js';
+import Inventory from '../models/Inventaire.models.js';
 
 const router = express.Router();
 
