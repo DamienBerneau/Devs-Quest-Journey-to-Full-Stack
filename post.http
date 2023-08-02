@@ -5,34 +5,25 @@ GET http://localhost:3000/
 GET http://localhost:3000/api/characters/
 
 ###
+GET http://localhost:3000/api/Competences/
+###
 POST http://localhost:3000/api/competences/ 
 Content-Type: application/json
-
-
-{
-    "name": "nodeJs"
-}
-###
-POST http://localhost:3000/api/items
-Content-Type: application/json
-
-{ "name": "Clavier Gaming", "effect": "augmenterVitesseDeCodage" }
 
 ###
 GET http://localhost:3000/api/items
 
 ###
-POST http://localhost:3000/api/quests
+POST http://localhost:3000/api/items
 Content-Type: application/json
-
-{
-  "name": "Mission de 3 jours en développement Frontend",
-  "xpReward": 500,
-  "moneyReward": 1000
-}
 
 ###
 GET http://localhost:3000/api/quests
 
 ###
-DELETE http://localhost:3000/api/items/3
+POST http://localhost:3000/api/quests
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/api/items/:id
+
