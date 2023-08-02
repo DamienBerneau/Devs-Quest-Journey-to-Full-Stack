@@ -4,3 +4,26 @@ GET http://localhost:3000/
 ###
 GET http://localhost:3000/api/characters/
 
+###
+POST http://localhost:3000/api/competences/ 
+Content-Type: application/json
+
+{
+    "name": "JavaScript"
+}
+
+###
+GET http://localhost:3000/items
+
+###
+POST http://localhost:3000/api/quests
+Content-Type: application/json
+
+{
+  "name": "Mission de 3 jours en développement Frontend",
+  "xpReward": 500,
+  "moneyReward": 1000
+}
+
+###
+GET http://localhost:3000/quests
