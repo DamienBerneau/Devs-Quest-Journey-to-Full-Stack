@@ -126,9 +126,9 @@ function buyItem(itemName) {
 // Fonction pour initialiser le jeu et saisir le nom du joueur ↓
 
 function initGame() {
-    rl.question(`Quel est votre nom?\n`, (name) => {
+    rl.question(`C'est quoi ton nom?\n`, (name) => {
         player.name = name;
-        console.log(`Bonjour, ${player.name}!`);
+        console.log(`Hey ! Salut, ${player.name}!`);
         chooseSpecialization();
     });
 }
@@ -137,7 +137,7 @@ function initGame() {
 
 function increaseXP(amount) {
     player.xp += amount;
-    console.log(`Vous avez gagné ${amount} points d'XP!`);
+    console.log(`Ta gagné ${amount} points d'XP!`);
 
     // Vérifier si le joueur a atteint un nouveau niveau ↓
 
