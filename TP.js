@@ -170,7 +170,7 @@ function increaseXP(amount) {
     if (nextLevel) {
         player.level = nextLevel.level;
         player.skills.push(...specializations[player.specialization].slice(0, nextLevel.unlockedSkills));
-        console.log(`Félicitations, vous êtes passé au niveau ${nextLevel.level}!`);
+        console.log(`Félicitations, vous êtes passé au niveau suivant ! ${nextLevel.level}!`);
     }
 }
 
