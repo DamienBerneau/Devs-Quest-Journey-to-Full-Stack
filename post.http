@@ -8,10 +8,10 @@ GET http://localhost:3000/api/characters/
 POST http://localhost:3000/api/competences/ 
 Content-Type: application/json
 
-{
-    "name": "php"
-}
 
+{
+    "name": "nodeJs"
+}
 ###
 GET http://localhost:3000/items
 
