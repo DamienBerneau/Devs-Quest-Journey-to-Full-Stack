@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router';
 
 function CreateCharacter() {
+  const navigate = useNavigate();
   const [name, setName] = useState('');
   const [specialization, setSpecialization] = useState('frontend');
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -7,7 +7,7 @@
     "start": "concurrently \"npm run dev:back\" \"npm run dev:front\"",
     "dev:back": "nodemon server",
     "dev:front": "vite",
-    "prestart": "npx sequelize db:create",
+    "prestart": "npx sequelize db:create && npx sequelize db:migrate",
     "mergefork": "git fetch upstream && git checkout main && git merge upstream/main"
   },
   "dependencies": {

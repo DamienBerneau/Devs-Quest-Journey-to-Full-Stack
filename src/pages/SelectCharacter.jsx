@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import CharacterCard from '../components/CharacterCard'
 import { useNavigate } from 'react-router';
+import CharacterCard from '../components/CharacterCard'
 
 function SelectCharacter() {
   const navigate = useNavigate();
