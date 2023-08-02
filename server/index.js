@@ -7,6 +7,7 @@ import database from "./database.js"
 // routes
 import routesCharacter from "./routes/character.routes.js"
 import itemRoutes from './routes/items.routes.js';
+import questRoutes from './routes/quest.routes.js'
 
 
 
@@ -29,5 +30,6 @@ app.use('/', (req, res, next) => {
 // routes
 app.use('/api/characters', routesCharacter)
 app.use('/api/items', itemRoutes)
+app.use('/api/quests', questRoutes)
 
 app.listen(PORT, () => console.log("Backend started at http://localhost:" + PORT));
