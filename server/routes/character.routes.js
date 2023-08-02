@@ -22,7 +22,7 @@ router.post("/", async (req, res) => {
     res.status(500).json({ message: "An error occurred while creating the character." });
   }
 });
-//Ajout partie GPT de là
+//Ma partie de là
 router.put('/characters/:id/experience', async (req, res) => {
   try {
     const characterId = req.params.id;
