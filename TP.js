@@ -14,7 +14,6 @@ const rl = readline.createInterface({
 const specializations = {
     frontend: ['HTML', 'CSS', 'JavaScript', 'React'],
     backend: ['Node.js', 'Express.js', 'SQL'],
-    devops: ['Docker', 'Kubernetes', 'CI/CD'],
 };
 
 // Définir les niveaux, l'XP nécessaire pour passer au niveau suivant et les compétences débloquées à chaque niveau ↓
@@ -66,9 +65,11 @@ const items = [
     { name: 'Coussins ergonomiques', effect: 'augmenterEndurance' },
     { name: 'Webcam', effect: 'augmenterMultitâche' },
     { name: 'Support de moniteur', effect: 'augmenterPrecision' },
+    { name: 'Purificateur d/air de bureau', effect: 'augmenterMultitâche' },
+    { name: 'Support casque audio', effect: 'augmenterEndurance' },
 ];
 
-// Créer un objet pour stocker tes données ↓
+// Créer un objet pour stocker tes données ↑
 
 const player = {
     name: '',
@@ -169,7 +170,7 @@ function increaseXP(amount) {
     if (nextLevel) {
         player.level = nextLevel.level;
         player.skills.push(...specializations[player.specialization].slice(0, nextLevel.unlockedSkills));
-        console.log(`Félicitations, vous êtes passé au niveau ${nextLevel.level}!`);
+        console.log(`Félicitations, vous êtes passé au niveau suivant ! ${nextLevel.level}!`);
     }
 }
 
