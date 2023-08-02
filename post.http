@@ -19,7 +19,7 @@ Content-Type: application/json
 { "name": "Clavier Gaming", "effect": "augmenterVitesseDeCodage" }
 
 ###
-GET http://localhost:3000/items
+GET http://localhost:3000/api/items
 
 ###
 POST http://localhost:3000/api/quests
@@ -32,4 +32,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/quests
+GET http://localhost:3000/api/quests
+
+###
+DELETE http://localhost:3000/api/items/3
