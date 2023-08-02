@@ -49,10 +49,10 @@ const levels = [
 const quests = [
     { name: 'Mission de 3 jours en développement Frontend', xpReward: 500, moneyReward: 1000 },
 
-    // Ajoutez d'autres quêtes ici avec leurs récompenses ↑
+    // Ajoute d'autres quêtes ici avec leurs récompenses ↑
 ];
 
-// Définir les objets et leurs effets ↓
+// Objets et leurs effets ↓
 
 const items = [
     { name: 'Clavier mécanique', effect: 'increaseCodingSpeed' },
@@ -61,7 +61,7 @@ const items = [
     { name: 'Écrans multiples', effect: 'increaseMultitasking' }
 ];
 
-// Créer un objet pour stocker les données du joueur ↓
+// Créer un objet pour stocker tes données ↓
 
 const player = {
     name: '',
@@ -93,7 +93,7 @@ function chooseSpecialization() {
     );
 }
 
-// Fonction pour afficher les informations du joueur ↓
+// Fonction pour afficher les infos du joueur ↓
 
 function displayPlayerInfo() {
     console.log(`\n----- Informations du joueur -----`);
@@ -106,32 +106,33 @@ function displayPlayerInfo() {
     console.log(`-----\n`);
 }
 
-// Fonction pour gérer les tâches ↓
+// Pour gérer les tâches ↓
 
 function handleTasks() {
 
-    // Logique pour afficher les tâches et gagner de l'XP ↓
+    // Pour afficher les tâches et gagner de l'XP ↓
 
     console.log(`Gérer les tâches`);
 }
 
-// Fonction pour gérer les quêtes ↓
+// Pour gérer les quêtes ↓
 
 function handleQuests() {
 
-    // ↑ Logique pour afficher les quêtes et récompenses 
+    // ↑ Pour afficher les quêtes et récompenses 
 
     console.log(`Gérer les quêtes`);
 }
 
-// Fonction pour acheter des objets ↓
+// Pour acheter des objets ↓
 
 function buyItem(itemName) {
     const item = items.find((item) => item.name.toLowerCase() === itemName.toLowerCase());
     if (item) {
         player.items.push(item);
 
-        // ↑ Définir les effets des objets ici (augmenter vitesse, XP, etc.)
+        // ↑ Définir les effets des objets ici 
+        // (augmenter vitesse, XP, etc.)
 
         console.log(`Vous avez acheté : ${item.name}`);
     } else {
@@ -139,7 +140,7 @@ function buyItem(itemName) {
     }
 }
 
-// Fonction pour initialiser le jeu et saisir le nom du joueur ↓
+// Pour initialiser le jeu et saisir le nom ↓
 
 function initGame() {
     rl.question(`C'est quoi ton nom?\n`, (name) => {
@@ -149,7 +150,7 @@ function initGame() {
     });
 }
 
-// Fonction pour augmenter l'XP du joueur ↓
+// Pour augmenter l'XP ↓
 
 function increaseXP(amount) {
     player.xp += amount;
@@ -165,6 +166,6 @@ function increaseXP(amount) {
     }
 }
 
-// Lancer le jeu ↓ 
+// Lance le jeu !! ↓ 
 
 initGame();
