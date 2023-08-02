@@ -55,10 +55,15 @@ const quests = [
 // Objets et leurs effets ↓
 
 const items = [
-    { name: 'Clavier mécanique', effect: 'increaseCodingSpeed' },
-    { name: 'Souris de gaming', effect: 'increasePrecision' },
-    { name: 'Chaise ergonomique', effect: 'increaseEndurance' },
-    { name: 'Écrans multiples', effect: 'increaseMultitasking' }
+    { name: 'Clavier Gaming', effect: 'augmenterVitesseDeCodage' },
+    { name: 'Souris de Gaming', effect: 'augmenterPrecision' },
+    { name: 'Chaise Ergonomique', effect: 'augmenterEndurance' },
+    { name: 'Écrans Multiples', effect: 'augmenterMultitâche' },
+    { name: 'Tapis de souris gaming', effect: 'augmenterPrecision' },
+    { name: 'Gobelet', effect: 'augmenterEndurance' },
+    { name: 'Casque Gaming', effect: 'augmenterEndurance' },
+    { name: 'Micro Gaming', effect: 'augmenterMultitâche' },
+    
 ];
 
 // Créer un objet pour stocker tes données ↓
