@@ -33,3 +33,6 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/api/quests
+
+###
+DELETE http://localhost:3000/api/items/3
