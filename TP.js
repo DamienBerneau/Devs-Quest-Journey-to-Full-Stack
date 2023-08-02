@@ -14,7 +14,6 @@ const rl = readline.createInterface({
 const specializations = {
     frontend: ['HTML', 'CSS', 'JavaScript', 'React'],
     backend: ['Node.js', 'Express.js', 'SQL'],
-    devops: ['Docker', 'Kubernetes', 'CI/CD'],
 };
 
 // Définir les niveaux, l'XP nécessaire pour passer au niveau suivant et les compétences débloquées à chaque niveau ↓
@@ -171,7 +170,7 @@ function increaseXP(amount) {
     if (nextLevel) {
         player.level = nextLevel.level;
         player.skills.push(...specializations[player.specialization].slice(0, nextLevel.unlockedSkills));
-        console.log(`Félicitations, vous êtes passé au niveau ${nextLevel.level}!`);
+        console.log(`Félicitations, vous êtes passé au niveau suivant ! ${nextLevel.level}!`);
     }
 }
 
