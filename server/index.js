@@ -6,6 +6,9 @@ import { dirname } from 'path';
 import database from "./database.js"
 // routes
 import routesCharacter from "./routes/character.routes.js"
+import itemRoutes from './routes/items.routes.js';
+
+
 
 database.sync().then(() => { console.log(`Tables created!`); });
 
@@ -25,5 +28,6 @@ app.use('/', (req, res, next) => {
 
 // routes
 app.use('/api/characters', routesCharacter)
+app.use('/api/items', itemRoutes)
 
 app.listen(PORT, () => console.log("Backend started at http://localhost:" + PORT));
