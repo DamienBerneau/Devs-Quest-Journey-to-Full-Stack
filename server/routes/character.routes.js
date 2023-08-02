@@ -1,5 +1,5 @@
 import { Router } from "express";
-import Character from "../models/Character.model.js";
+import { Character } from "../models/index.js";
 
 const router = Router();
 

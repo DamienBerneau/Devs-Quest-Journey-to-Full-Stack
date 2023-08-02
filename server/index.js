@@ -2,17 +2,20 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-//import assetsRouter from "./assets-router.js"
-import database from "./database.js"
-// routes
+
+// Routes
 import routesCharacter from "./routes/character.routes.js"
 import routesCompetence from "./routes/competence.routes.js"
 import itemRoutes from './routes/items.routes.js';
+import questRoutes from './routes/quest.routes.js'
 
 
 
+// Database
+import database from "./database.js"
 database.sync().then(() => { console.log(`Tables created!`); });
 
+// Middlewares
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -25,11 +28,11 @@ app.use('/', (req, res, next) => {
   console.log(req.method, req.path)
   next()
 })
-//app.use("/src", assetsRouter);
 
-// routes
+// Routes used
 app.use('/api/characters', routesCharacter)
 app.use('/api/competences', routesCompetence)
 app.use('/api/items', itemRoutes)
+app.use('/api/quests', questRoutes)
 
 app.listen(PORT, () => console.log("Backend started at http://localhost:" + PORT));
