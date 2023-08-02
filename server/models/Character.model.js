@@ -32,4 +32,14 @@ const Character = database.define('Character', {
   },
 });
 
+Character.prototype.gagnerXP = function (xpGagne) {
+  this.experience += xpGagne;
+  const xpNecessairePourNiveauSuivant = this.niveau * 100; // Exemple : il faut 100 XP pour passer du niveau 1 au niveau 2
+  while (this.experience >= xpNecessairePourNiveauSuivant) {
+    this.experience -= xpNecessairePourNiveauSuivant;
+    this.niveau++;
+    this.augmenterCompetences();
+  }
+};
+
 export default Character;
