@@ -60,10 +60,12 @@ const items = [
     { name: 'Chaise Ergonomique', effect: 'augmenterEndurance' },
     { name: 'Écrans Multiples', effect: 'augmenterMultitâche' },
     { name: 'Tapis de souris gaming', effect: 'augmenterPrecision' },
-    { name: 'Gobelet', effect: 'augmenterEndurance' },
+    { name: 'Tasse à café Gamer', effect: 'augmenterEndurance' },
     { name: 'Casque Gaming', effect: 'augmenterEndurance' },
     { name: 'Micro Gaming', effect: 'augmenterMultitâche' },
-    
+    { name: 'Coussins ergonomiques', effect: 'augmenterEndurance' },
+    { name: 'Webcam', effect: 'augmenterMultitâche' },
+    { name: 'Support de moniteur', effect: 'augmenterPrecision' },
 ];
 
 // Créer un objet pour stocker tes données ↓
