@@ -10,6 +10,9 @@ import itemRoutes from './routes/items.routes.js';
 import questRoutes from './routes/quest.routes.js'
 import InventoryRoutes from './routes/inventory.routes.js'
 
+import routesItem from "./routes/item.routes.js"
+import routesSkill from "./routes/skill.routes.js"
+import routesTask from "./routes/task.routes.js"
 
 // Middlewares
 const __filename = fileURLToPath(import.meta.url);
@@ -32,5 +35,8 @@ app.use('/api/skills', routesSkills)
 app.use('/api/items', itemRoutes)
 app.use('/api/quest', questRoutes)
 app.use('/api/inventaire', InventoryRoutes)
+app.use('/api/items', routesItem)
+app.use('/api/skills', routesSkill)
+app.use('/api/tasks', routesTask)
 
 app.listen(PORT, () => console.log("Backend started at http://localhost:" + PORT));

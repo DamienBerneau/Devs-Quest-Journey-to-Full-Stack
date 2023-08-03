@@ -24,7 +24,7 @@ const Character = database.define('Character', {
     type: DataTypes.INTEGER,
     defaultValue: 0,
   },
-  //skills: ?, // TODO
+  skills: DataTypes.JSON, // DataTypes.ARRAY(DataTypes.STRING) non dispo en mysql
   //items: ?, //TODO
   money: {
     type: DataTypes.INTEGER,
