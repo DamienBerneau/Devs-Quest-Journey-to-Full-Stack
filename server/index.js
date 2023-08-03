@@ -5,7 +5,7 @@ import { dirname } from 'path';
 
 // Routes
 import routesCharacter from "./routes/character.routes.js"
-import routesCompetence from "./routes/competence.routes.js"
+import routesSkills from "./routes/skills.routes.js"
 import itemRoutes from './routes/items.routes.js';
 import questRoutes from './routes/quest.routes.js'
 import InventaireRoutes from './routes/inventaire.routes.js'
@@ -32,7 +32,7 @@ app.use('/', (req, res, next) => {
 
 // Routes used
 app.use('/api/characters', routesCharacter)
-app.use('/api/competences', routesCompetence)
+app.use('/api/skills', routesSkills)
 app.use('/api/items', itemRoutes)
 app.use('/api/quests', questRoutes)
 app.use('/api/inventaire', InventaireRoutes)
