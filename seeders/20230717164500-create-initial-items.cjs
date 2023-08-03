@@ -17,9 +17,9 @@ module.exports = {
       },
     ]);
     await queryInterface.bulkInsert('Skills', [
-      { name: 'Node.js', price: 0, },
-      { name: 'React', price: 0, },
-      { name: 'Javascript', price: 0, },
+      { name: 'Node.js' },
+      { name: 'React' },
+      { name: 'Javascript'},
     ]);
     await queryInterface.bulkInsert('Characters', [
       {

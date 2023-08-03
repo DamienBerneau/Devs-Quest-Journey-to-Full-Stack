@@ -2,6 +2,7 @@ import database from "../database.js"
 import Character from './Character.model.js';
 // import Inventory from './Inventory.models.js'
 import Quest from './Quest.models.js';
+import Task from './Task.model.js';
 // import Skill from './Skill.models.js';
 // import Item from './Item.models.js';
 
@@ -21,6 +22,6 @@ Item.belongsToMany(Character, { through: CharacterItem });
 
 
 
-export { Character, Item, CharacterItem, Skill, Quest };
+export { Character, Item, CharacterItem, Skill, Quest, Task };
 
 database.sync().then(() => { console.log(`Tables created.`); });

@@ -13,14 +13,21 @@ const Item = database.define('Item', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  description: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   price:
   {
     type: DataTypes.INTEGER,
-   allowNull:false 
+    allowNull: false
   },
   effect: {
     type: DataTypes.STRING,
     allowNull: false,
+  },
+  skills: {
+    type: DataTypes.JSON, // we store skills and their levels in a JSON object
   },
 });
 
