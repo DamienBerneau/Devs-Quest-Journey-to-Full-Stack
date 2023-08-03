@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 import database from '../database.js';
 
-const Competence = database.define('Competence', {
+const Skills = database.define('Skills', {
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -15,4 +15,4 @@ const Competence = database.define('Competence', {
 }
 })
 
-export default Competence
+export default Skills
