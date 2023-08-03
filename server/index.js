@@ -30,6 +30,14 @@ app.use('/', (req, res, next) => {
   next()
 })
 
+// Define relationships
+Character.belongsToMany(Item, { through: CharacterItem });
+Item.belongsToMany(Character, { through: CharacterItem });
+ 
+export { Character, Item, CharacterItem, Skill, Task };
+ 
+database.sync().then(() => { console.log(`Tables created.`); });
+
 // Routes used
 app.use('/api/characters', routesCharacter)
 app.use('/api/skills', routesSkills)

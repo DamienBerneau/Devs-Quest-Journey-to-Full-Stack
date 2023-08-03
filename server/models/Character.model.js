@@ -30,6 +30,10 @@ const Character = database.define('Character', {
     type: DataTypes.INTEGER,
     defaultValue: 0,
   },
+  slots: {
+    type: DataTypes.INTEGER,
+    defaultValue: 50, // Nombre de slots par défaut dans l'inventaire
+  },
 });
 
 Character.prototype.gagnerXP = function (xpGagne) {
