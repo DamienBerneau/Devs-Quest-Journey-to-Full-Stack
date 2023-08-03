@@ -5,9 +5,13 @@ GET http://localhost:3000/
 GET http://localhost:3000/api/characters/
 
 ###
+GET http://localhost:3000/api/Competences/
+###
 POST http://localhost:3000/api/competences/ 
 Content-Type: application/json
 
+###
+GET http://localhost:3000/api/items
 
 {
     "name": "PHP"
@@ -19,10 +23,7 @@ Content-Type: application/json
 { "name": "Support de moniteur", "effect": "augmenterPrecision" }
 
 ###
-GET http://localhost:3000/api/items
-
-###
-POST http://localhost:3000/api/quests
+POST http://localhost:3000/api/items
 Content-Type: application/json
 
 {
@@ -32,7 +33,9 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/quests
+POST http://localhost:3000/api/quests
+Content-Type: application/json
 
 ###
-DELETE http://localhost:3000/api/items/3
+DELETE http://localhost:3000/api/items/:id
+
