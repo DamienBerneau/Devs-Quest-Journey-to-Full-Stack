@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 const CharacterCard = ({ character = {} }) => {
   const [skills, setSkills] = useState([])
-  const [characterSkills, setCharacterSkills] = useState([])
+  const [allSkills, setAllSkills] = useState([])
   useEffect(() => {
     fetch(`/api/skills`)
       .then(res => res.json())
@@ -12,13 +12,17 @@ const CharacterCard = ({ character = {} }) => {
   }, [])
   useEffect(() => {
     character.skills = character.skills ?? []
-    const allSkills = [...new Set([...skills, ...character.skills ?? []])]
-    setCharacterSkills(allSkills.map(skill => {
-      return {
+    const skillsFlatted = skills.map(skill => skill.name)
+    const allSkillsMerged = [...new Set([...skillsFlatted, ...character.skills])]
+    setAllSkills(allSkillsMerged.map(skill => {
+      const owned = character.skills.includes(skill)
+      const inSkills = skillsFlatted.includes(skill)
+      const a = {
         name: skill,
-        owned: character.skills.includes(skill),
-        special: skills.includes(skill),
+        owned: owned && inSkills,
+        special: owned && !inSkills,
       }
+      return a
     }))
   }, [skills, character])
   return (
@@ -34,7 +38,7 @@ const CharacterCard = ({ character = {} }) => {
       <div className="card-body">
         <div className="card-title">Compétences</div>
         <div className="card-text">
-          {skills.map((item, index) => <Item item={item} key={index} />)}
+          {allSkills.map((item, index) => <Item item={item} key={index} />)}
         </div>
       </div>
     </div>
