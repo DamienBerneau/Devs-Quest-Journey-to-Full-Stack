@@ -8,7 +8,7 @@ import routesCharacter from "./routes/character.routes.js"
 import routesSkills from "./routes/skills.routes.js"
 import itemRoutes from './routes/items.routes.js';
 import questRoutes from './routes/quest.routes.js'
-import InventaireRoutes from './routes/inventaire.routes.js'
+import InventoryRoutes from './routes/inventory.routes.js'
 
 
 
@@ -33,9 +33,9 @@ app.use('/', (req, res, next) => {
 // Define relationships
 Character.belongsToMany(Item, { through: CharacterItem });
 Item.belongsToMany(Character, { through: CharacterItem });
- 
+
 export { Character, Item, CharacterItem, Skill, Task };
- 
+
 database.sync().then(() => { console.log(`Tables created.`); });
 
 // Routes used
@@ -43,6 +43,6 @@ app.use('/api/characters', routesCharacter)
 app.use('/api/skills', routesSkills)
 app.use('/api/items', itemRoutes)
 app.use('/api/quests', questRoutes)
-app.use('/api/inventaire', InventaireRoutes)
+app.use('/api/inventaire', InventoryRoutes)
 
 app.listen(PORT, () => console.log("Backend started at http://localhost:" + PORT));
