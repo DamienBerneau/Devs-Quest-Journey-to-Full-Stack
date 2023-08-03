@@ -2,7 +2,7 @@
 GET http://localhost:3000/
 
 ###
-GET http://localhost:3000/api/characters/
+GET http://localhost:3000/api/characters/2
 
 ###
 GET http://localhost:3000/api/skills/
