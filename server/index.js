@@ -30,7 +30,7 @@ app.use('/', (req, res, next) => {
 app.use('/api/characters', routesCharacter)
 app.use('/api/skills', routesSkills)
 app.use('/api/items', itemRoutes)
-app.use('/api/quests', questRoutes)
+app.use('/api/quest', questRoutes)
 app.use('/api/inventaire', InventoryRoutes)
 
 app.listen(PORT, () => console.log("Backend started at http://localhost:" + PORT));

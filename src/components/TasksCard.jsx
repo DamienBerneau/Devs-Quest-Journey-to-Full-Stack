@@ -5,7 +5,7 @@ const TasksCard = () => {
   const [tasks, setTasks] = useState([])
 
   useEffect(() => {
-    fetch(`/api/tasks`)
+    fetch(`/api/quest`)
       .then(res => res.json())
       .then(items => setTasks(items))
   }, [])

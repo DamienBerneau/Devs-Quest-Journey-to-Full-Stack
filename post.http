@@ -2,7 +2,8 @@
 GET http://localhost:3000/
 
 ###
-GET http://localhost:3000/api/characters/1
+GET http://localhost30000/api/character/:id/items
+
 
 
 ###
