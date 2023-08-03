@@ -2,9 +2,9 @@ import { Model, DataTypes } from 'sequelize';
 import database from '../database.js';
 
 
-class CharacterItem extends Model { }
+class Inventory extends Model { }
 
-CharacterItem.init({
+Inventory.init({
   quantity: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -12,8 +12,8 @@ CharacterItem.init({
   }
 }, {
   sequelize: database,
-  modelName: 'CharacterItem',
+  modelName: 'Inventory',
 });
 
 
-export default CharacterItem;
+export default Inventory;

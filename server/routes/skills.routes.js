@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import Skills from '../models/Skills.models.js';
+import Skills from '../models/Skill.models.js';
 
 const router = Router();
 
