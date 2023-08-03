@@ -54,19 +54,19 @@ const quests = [
 // Objets et leurs effets ↓
 
 const items = [
-    { name: 'Clavier Gaming', effect: 'augmenterVitesseDeCodage' },
-    { name: 'Souris de Gaming', effect: 'augmenterPrecision' },
-    { name: 'Chaise Ergonomique', effect: 'augmenterEndurance' },
-    { name: 'Écrans Multiples', effect: 'augmenterMultitâche' },
-    { name: 'Tapis de souris gaming', effect: 'augmenterPrecision' },
-    { name: 'Tasse à café Gamer', effect: 'augmenterEndurance' },
-    { name: 'Casque Gaming', effect: 'augmenterEndurance' },
-    { name: 'Micro Gaming', effect: 'augmenterMultitâche' },
-    { name: 'Coussins ergonomiques', effect: 'augmenterEndurance' },
-    { name: 'Webcam', effect: 'augmenterMultitâche' },
-    { name: 'Support de moniteur', effect: 'augmenterPrecision' },
-    { name: 'Purificateur d/air de bureau', effect: 'augmenterMultitâche' },
-    { name: 'Support casque audio', effect: 'augmenterEndurance' },
+    { name: 'Clavier Gaming', effect: 'augmenterVitesseDeCodage', prix: 50 },
+    { name: 'Souris de Gaming', effect: 'augmenterPrecision', prix: 40 },
+    { name: 'Chaise Ergonomique', effect: 'augmenterEndurance', prix: 120 },
+    { name: 'Écrans Multiples', effect: 'augmenterMultitâche', prix: 200 },
+    { name: 'Tapis de souris gaming', effect: 'augmenterPrecision', prix: 20 },
+    { name: 'Tasse à café Gamer', effect: 'augmenterEndurance', prix: 15 },
+    { name: 'Casque Gaming', effect: 'augmenterEndurance', prix: 80 },
+    { name: 'Micro Gaming', effect: 'augmenterMultitâche', prix: 60 },
+    { name: 'Coussins ergonomiques', effect: 'augmenterEndurance', prix: 30 },
+    { name: 'Webcam', effect: 'augmenterMultitâche', prix: 70 },
+    { name: 'Support de moniteur', effect: 'augmenterPrecision', prix: 35 },
+    { name: 'Purificateur d/air de bureau', effect: 'augmenterMultitâche', prix: 150 },
+    { name: 'Support casque audio', effect: 'augmenterEndurance', prix: 25 },
 ];
 
 // Créer un objet pour stocker tes données ↑
