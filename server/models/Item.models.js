@@ -13,7 +13,7 @@ const Item = database.define('Item', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  prix:
+  price:
   {
     type: DataTypes.INTEGER,
    allowNull:false 
