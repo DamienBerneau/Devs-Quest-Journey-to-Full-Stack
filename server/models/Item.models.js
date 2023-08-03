@@ -13,6 +13,11 @@ const Item = database.define('Item', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  prix:
+  {
+    type: DataTypes.INTEGER,
+   allowNull:false 
+  },
   effect: {
     type: DataTypes.STRING,
     allowNull: false,
